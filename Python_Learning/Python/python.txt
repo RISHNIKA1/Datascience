@@ -243,3 +243,51 @@
         with open(...) - use safe open
         os.path.exists(), os.path.isfile(), os.path.isdir() - check file
         os.remove() - delete file
+
+# MODULES AND PACKAGES
+
+1. what is modules?
+        * Module is an simple python file (.py file).
+        * That contains python code like ( functions, variabels, classes, logic)
+        * which can imported and reused the other programs called modules.
+        * Built-in Modules - random, math, os, datetime, sys 
+        * user defines modules - you own .py files like (app.py)
+
+2. Why use modules?
+        * organized code better.
+        * avoid rewritting the same code.
+        * make your programs more readable and reusable.
+
+3. What is Packages?
+        * Packages is a folder.
+        * That contains multiple modules and optional __init__.py file.
+        * It allows you to organized reuabale model together.
+        * NumPy, Pandas,My_package.py
+
+
+# STRINGS
+
+1. What is string?
+        * striing is a sequence of character enclosed with single quoted '' or " " or """ """
+        * strings cant changed after creation.
+        * Index starts from 0.
+
+2. String concept :
+        string creation - name = "ARM", character = 'c'
+        Accessed string - print(name[1]) o/p - R 
+        string slicing  - name[:2]
+        Concatination   - print(fname+ " " +lname)
+        Formatting      - f-string (print(f'Name :{name}'))
+                          .format  (print("Name :{}".format(name)))
+        checkking       - nam.isalpha() , name.isdigit()
+
+3. String Methods ?
+        .lower()
+        .upper()
+        .title()
+        .strip()
+        .replace(old.new)
+        .split()  - "a,b,c".split(",") => ["a","b","c"]
+        .join()   - " ".join(["hi","there"]) ==> hi there
+        .find().  - "hello".find("e") => 1
+        .count(sub) - "banana".count("a") =>3
