@@ -122,4 +122,124 @@
 4. what is Dictionary?
         * dict is an order, changeable, stored data in key : value pairs, keys are unique.{"name" :"ishu"}.(Mutable)
         * Methods : keys(), values(), items(), get(key), update[], pop(key), popitems(), clear().
-        
+
+# FUNCTIONS
+
+1. What is function?
+        * Function is a block of code that runs only when it is called.
+        * you can pass data and parameters it returns the output.
+        * Its used to reuse code, avoid repetation, makes programs neat.
+
+2. Types of Functions?
+        * Built-in functions - len(), print(), type()
+        * user defined functions - create a function using def keyword.
+
+# COMMANDS
+
+1. What is commands?
+        * commands are lines in code that are not executed by python.
+        * they are used to explain the code and make it easy to understand.
+
+2. Types of commands?
+        Single line command - using #
+        multiple line command - using ''' ''' or """ """
+
+# OPERATORS 
+
+1. what is operators?
+        operators are synbols are keyword used to perform operation on variables and values.
+
+2. Types of Operators? 
+        * Arithematic
+        * Assignment
+        * Comparision
+        * Logical (and, or, not)
+        * Identity (is ,is not)
+        * Membership (in, not in)
+        * Bitwise
+
+3. Arithematic Operators?
+        * Arithematic operators are used to perform basic math calculation.
+        * (+, -, *, /, //, %, **)
+
+4. Assignment Operators?
+        * Assignment operators are used to assign values for variables.
+        * (=, +=, -=, *=, /=, //=, %=, **=)
+
+5. Comparision Operator?
+        * Comparision operators are used to compare two variables.
+        * (==, !=, >, >=, <, <=)
+
+6. Logical Operator?
+        * Logical operators are uesd to combine multiple conditions.
+        * and - Both condition must be true 
+        * or  - Atleast one condion must be true 
+        * not - reverse the result
+
+7. Identity Operator?
+        * used to compare memory location of two objects
+        * is, is not
+
+8. Membership Operator?
+        * used to check if a value is present in the sequence (list, Tuple,string,etc)
+        * in, not in
+
+9. Binary Operator?
+        used to compare numbers in binary format.
+
+
+# ERRORS HANDLING
+
+1. what is error?
+        Error is an problem in that program that causes it to stop or behave unexpectedly.
+
+2. Two types of error?
+        * Mistake in writting code  - if x==5 print("hi")
+        * Happens during program execution - 10/0 (divison by zero)
+
+3. Exception Handling?
+        Instead of stopping the program when an error occurs, python lets you handled it using try,except etc..
+
+4. Common keywoords in exception handling?
+        * try - used to write a risky code (which cause error)
+        * except - caches the errors and handles it
+        * else - Runs only if no error occur in try block
+        * finally - always runs (even if errors occur)
+        * raise - manually trigger an exception
+
+5. Common Excepton?
+        * ZeroDevisionError 
+        * TypeError
+        * ValueError
+        * FileNotFoundError
+        * IndexError
+        * KeyError
+
+# FILE HANDLING
+
+1. What is file handling?
+        * File handling allows you to create , read, write, delete files using python.
+        * It is used to stored data permenently.
+
+2. Basic syntax to open file ?
+        file = open("name.txt","mode")
+
+3. Common Modes?
+        'r' = read
+        'w' = write
+        'a' = append
+        'x' = create
+        'b' = binary mode
+        't' = text mode
+
+4. Functions/Methods ?
+        open(filename,mode)
+        read()
+        readline()
+        readlines()
+        write()
+        writelines()
+        "a" mode
+        with open(...) - use safe open
+        os.path.exists(), os.path.isfile(), os.path.isdir() - check file
+        os.remove() - delete file
