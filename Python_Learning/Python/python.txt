@@ -1,0 +1,125 @@
+1. What is Python?
+    * Python is a object oriented programming languaage.
+    * It is a High level programming languaage.
+    * using web application, Software development, Scripting, Datasceince, Mathematics.
+    * Simple syntax for easy to understanding. 
+
+2. What is Variable?
+        Variable is a container using to store values.
+
+3. How to create Variable?
+    * can starts with letters or underscores.
+    * can't starts with numbers
+    * can't use symbols like ($,#,@,*)
+    * can't use python key words.
+
+4. What is Data types ?
+        Datatypes tells what kind of values a variable hold.
+
+5. Basic Datadypes in Python?
+        * Int (34)
+        * Float (34.0)
+        * Boolean ( True or False ) 
+        * String ("Hi") 
+        * None Type ( None)
+
+6. Collection DataTypes in python?
+        * List - ordered,changeable - [1,3,"hi",True,None,"apple"]
+        * Tuple - ordered , unchangeable - (1,2,2,3)
+        * set - unordered , no duplicates - {1,3,5}
+        * Dictionary - key value pairs - { "name" : "AAA", "age" :22}
+
+7. print()?
+        * print() function is a built-in function in python.
+        * used to display output on the screen.
+
+    Example :
+        a. print Text          - print("Hello")
+        b. print variable      - print(name)
+        c. print many variable - print(name,age)
+        d. formatted string.   - print(f'Name : {name}, Age. :{age}')
+        e. New line            - print("hi \n how are you rishi")
+        f. same line           - print("hello",end ="")
+        g. custom separator    - print(1,2,3,sep ="-" )
+        h. tap space           - print("hi \t rishi")
+
+8. what is input()?
+        input() is built-in function in python used to get the input from the user.
+
+    Example :
+        a. get name as Text       - name = input("enter name")
+        b. get name as number     - age = int(input("enter age"))
+        c. get decimal            - number = float(input("enter value "))
+        d. multiple inputs        - a,b = input().split()
+        e. convert all to int     - a,b = map(int,input().split())
+
+9. What is Conditional Statements?
+        Conditional statements are used to check the conditions and make decission.
+
+    Types :
+        a. if statement  b. if...else statement  c. if..elif..else statement
+
+    a. if statement :
+        if means if a condition is True , Then execute that block.
+
+    b. if else statement :
+        * When condition is True , do one thing.
+        * when condition is False , do something else.
+
+    c. if elif else statement:
+        when you want to check multiple condition use elif.
+
+10. What is Indentation in Python?
+        * Indentation is spaces at the  begining of the code line.
+        * In python Indentation indicate a block of code.
+        * other programming languaages Indentation is readability purpose only but python Indentation is very important.
+
+# Summary 
+
+    if       --> Check first condition.
+    elif     --> Check 2nd condition when 1st one is fails.
+    else     --> Runs when no condition is True.
+    :        --> used at the end of the code line.
+    Indent   --> Required for code block.
+
+# Control Flow Statements
+
+1. What is Loop?
+        A Loop is used to repeat a block of code multiple times.
+   Types :
+        a. for loop     - when you know how many times. 
+        b. while loop   - when you repeat based on a condition.
+
+2. What is for loop?
+        * A for loop in python is used to iterate over a sequence and repeat a block of code fixed number of times.
+        * Syntax : for i in range(start , end, step):
+        * usage  : List, Strings, Range
+
+3. what is while loop?
+        * A While loop in python is used to execute a block of code as long as the condition is True.
+        * Syntax : while condion :
+        * Usage : repeat until something changes
+
+4. python keywords (break, continue, pass)?
+        * break    - break statement used to stop the loop even if while condion is True. (stop the loop)
+        * continue - continue statements are used to skip the current iteration and continue to the next.(skip the step)
+        * pass     - pass statements are placeholder used to avoid getting an error.
+
+# Collection Datatypes
+
+1. what is list?
+        * List is an order, changeable, allows dublicate values. It represent a square brackets[1,2,3].(Mutable)
+        * Methods : append(), insert(), pop(), remove(), clear(), count(), index(), reverse(), sort().
+
+2. what is Tuple?
+        * Tuple is an order, unchangeable, allow dublicate values. It represent a baranthesis(1,2,3).(Immutable)
+        * Methods : count(), index().
+
+3. what is set?
+        * set is unordered, changeable, dont allow dublicate values. It represent a curly brackets{1,2,3}.(Mutable)
+        * Methods : add(), update(), remove(), pop(), clear(), union(), intersection(), difference(), discard().
+
+4. what is Dictionary?
+        * dict is an order, changeable, stored data in key : value pairs, keys are unique.{"name" :"ishu"}.(Mutable)
+        * Methods : keys(), values(), items(), get(key), update[], pop(key), popitems(), clear().
+        
