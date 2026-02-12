@@ -291,3 +291,17 @@
         .join()   - " ".join(["hi","there"]) ==> hi there
         .find().  - "hello".find("e") => 1
         .count(sub) - "banana".count("a") =>3
+
+## OOPS
+
+1. What is oops?
+        * OOPS is an Object Oriented Programming System.
+        * Which can contain data and code. (data is the form of attributes and variables) and (code is the form of functions and methods.)
+        * It helps in organizing code ,reuability and scalabilty.
+        * python is a object-oriented programming languaage everything python is an object including classes, functions, and even basic data types.
+
+2. Main pillers of OOPs?
+        * Enacapsulation * Abstraction * Inheritance * Polymorphism
+
+3. Main concept of OOPs?
+        Class - 
