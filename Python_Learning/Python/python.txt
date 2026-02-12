@@ -304,4 +304,252 @@
         * Enacapsulation * Abstraction * Inheritance * Polymorphism
 
 3. Main concept of OOPs?
-        Class - 
+        Class         - A Blueprint/Template for creating objects
+        Object        - Instances of a class
+        Constructor   - It is special method to Initialize a object (__init__():)
+        Inheritance   - One class inherits from another class
+        Encapsulation - Hiding internal details of an object
+        Polymorphism  - Many forms - same function name , different behaviour
+        self          - Refers the current instances of the class
+
+4. Encapsulation?
+        * Encapsulation is an object oriented Programming concept.
+        * Used to Hiding intenal details of an objects and exposes only what is neccesary.
+        * Using Public, Private and Protected access.
+
+   Benefits:
+        * Data hiding * control data * Flexible * cleaner code
+   
+   Implements:
+        * public members (var) => accessible from anywhere
+        * private members (__var) => not accessible directly from outside the class
+        * Protected members (_var) => should not be accessible directly from outside the class
+
+   # Example of encapsulation
+
+        class BankAccount :
+        def __init__(self,name,balance):
+                self.name = name                # public attribute
+                self.__balance = balance        # private attribute
+                
+        def deposit(self,amount):
+                if amount >0:
+                self.__balance += amount
+        
+        def get_balance(self):
+                return self.__balance
+        
+
+        account = BankAccount("Rishi",25000)
+        account.deposit(5000)
+
+        print(account.name)                # Allowed
+        print(account.get_balance())       # Allow this method
+        #print(account.__balance)           # Error cant access private variable directly
+
+
+5. Abstraction?
+        * Abstraction hides complex implementation details and shows only the essential feature to the user.
+        * Acieved using abstract class or abstract method.
+        * Python provides ABC module to create abstract classes.
+
+   Key points :
+        Abstract Class :
+                A class can't be initiated directly.
+        Abstract Method :
+                A method that has no body in the abstract class.
+        Child Class :
+                Implement the all abstract methods of the abstract class.
+
+  # Example of Abstract classes
+
+        from abc import ABC,abstractmethod
+
+        # Abstract Class
+        class Vehicle(ABC):
+        
+        @abstractmethod
+        def start_engine(self):
+                pass
+        
+        @abstractmethod
+        def stop_engine(self):
+                pass
+        
+        # child class
+        class car(Vehicle):
+        def start_engine(self):
+                print("car engine started")
+        
+        def stop_engine(self):
+                print("car engine stopped")
+                
+
+        # creating object of abstract class will raise error
+        # V= Vehicle() # wrong
+
+        # but we can use child class
+
+        c=car()
+        c.start_engine()
+        c.stop_engine()
+    
+    
+6. Inheritance?
+        * Inheritance is an object-oriented programming concept.
+        * where one class inherits from properties and behaviour from another class.
+        * This allows code reusabilty and helps in building relationship between classes.
+   
+   Why use Inheritance?
+        * Reuse code from existing classes.
+        * organize code better
+        * extenting or modifying functionality without changing the orginal code.
+
+   # Example Inheriatnce 
+
+        class Parent:
+        def display(self):
+                print("hi")
+        
+        class child(Parent):
+        pass
+
+        c = child()
+        c.display() #inherit method
+
+7. Types of Inheritance?
+        * Single Inheriatnce
+        * Multiple Inheritance
+        * Multilvel Inheriatnce
+        * Hiearachical Inheriatnce
+        * Hyprid Inheriatnce
+
+8. Single Inheriatnce?
+        * A chile class inherits from one parent class. 
+        * Ex : A --> B
+   # Example of Single Inheritace
+
+        class Animal:
+        def sound(self):
+                print("Animal sound")
+        
+        class dog(Animal):
+        pass
+
+        d= dog()
+        d.sound()
+
+9. Multiple Inheriatnce?
+        * A child class inherits from more than one parent class.
+        * Ex : A+B --> C
+   # Example of Multiple Inheritance
+
+        class Father():
+        def Money(self):
+                print("dads money")
+        class Mother():
+        def Phone(self):
+                print("Moms Phone")
+        class Child(Father,Mother):
+        pass
+
+        son = Child()
+        son.Money()
+        son.Phone()
+
+
+10. Multilvel Inheriatnce?
+        * A class inherits from a class which itself inherits from another class.
+        * Ex : A-->B-->C
+    # Examole of Multilevel Inheritance
+
+        class Grandparent:
+        def family(self):
+                print("Grandparent family")
+
+        class Father(Grandparent):
+        pass
+
+        class son(Father):
+        pass
+
+        child = son()
+        child.family()
+
+11. Hiearachical Inheritance?
+        * Multiple Chils classes Inheriatnce single parent class.
+        * Ex : A-->B,C,d
+
+    # Example of Hireachical inheritance
+
+        class vehicle:
+        def fuel(self):
+                print("Petrol or Diesel")
+        
+        class car(vehicle):
+        pass
+
+        class Bike(vehicle):
+        pass
+
+        c=car()
+        b= Bike()
+        c.fuel()
+        b.fuel()
+
+12. Hybrid Inheriatnce?
+        * A combination of two or more types of inheritance
+        * Ex : Mixed
+    # Example of Hybrid Inheritance
+
+        class A:
+        def a(self):
+                print("A")
+        class B(A):
+        def b(self):
+                print("B")
+        class C:
+        def c(self):
+                print("C")
+        class D(B,C):
+        def d(self):
+                print("D")
+
+        obj=D()
+        obj.a()
+        obj.b()
+        obj.c()
+        obj.d()
+
+# Polymorphism 
+        * Polymorphism is an OOPs concept.
+        * Where same function or methods name behaves differently debends on object or data type it is working.
+        * poly - Many , morphism - forms
+        * Its allows writting flexible and reuabale code.
+
+1. Types of Polymorphism ?
+        * Method overloading
+        * Method Overriding
+   
+   Method overriding:
+        * A child class can override a method from the  parent class called method overriding.
+
+   Mehod Overloading:
+        * Having multiple method with the same name but different parameter signature.
+        * It not suitbale for python. you can use some key points.
+
+  # Example Method Overridng
+
+        class Father:
+        def house(self):
+                print("White house")
+
+        class Son(Father):
+        def phone(self):
+                print("sons phone")
+                
+        def house(self):
+                print("yellow house")
+                
+        s=Son()
+        s.house()
