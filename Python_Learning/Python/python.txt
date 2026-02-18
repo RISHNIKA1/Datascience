@@ -553,3 +553,94 @@
                 
         s=Son()
         s.house()
+
+
+
+## -------------------------- INTERVIEW QUESTIONS --------------------------------- ##
+
+1. Shallow Copy vs Deep Copy?
+      Shallow copy creates a new object, but nested objects are shared (same reference).
+      So changing inner/nested data affects the original.
+
+      Deep copy creates a new object and also copies all nested objects independently.
+      So changes won’t affect the original.
+
+2. *args Vs **kwargs
+      1. *arqs - used to pass multiple positional arquments to the functions.
+      2. **kwarqs - used to pass multiple key word arquments to the functions.
+
+      def demo(*args, **kwargs):
+       print(args)
+       print(kwargs)
+   
+      demo(10, 20, 30, name="Rishnika", role="Python Dev")
+
+3. Supervised and Unsupervised ?
+
+      *  Supervised Learning learns from labeled data (input + output).
+         Used for: house price prediction, spam detection
+         Algorithms: Linear Regression, Logistic Regression, KNN, SVM, Decision Tree, Random Forest
+         
+      *  Unsupervised Learning learns from unlabeled data and finds patterns/groups.
+         Used for: customer segmentation
+         Algorithms: K-Means, Hierarchical Clustering, DBSCAN, PCA
+
+4. In your project, you used OpenCV. What is OpenCV and where did you use it in your project?
+
+      * OpenCV is a Open-Source Computer Vision library used for images and video processing.
+      * In my project, I used opencv for access the webcam, capture the live frame videos, preprocessing frames, 
+         and show the output after detecting the handgesture.
+
+5. Primary Key Vs Foreign Key?
+
+      * Primary Key uniquely identifies each record in a table. It cannot be NULL and cannot have duplicate values.
+      * Foreign Key is a column that references the primary key of another table to create a relationship between two tables.
+
+
+6. loc[] vs iloc[]?
+
+      * loc[] is used to access rows/columns using labels. (loc[2, Name])
+      * iloc[] is used o access rows/columns uding integer positions. (iloc[2,0])
+
+7. Gesture based application launcher ML or Dl project?
+      * It is a Deep Learning project because I used  TensorFlow/Keras to trained a neural network model for gesture classification.
+      * But overall, it includes both ML and DL concepts like Dataset preparation, Classification, and eveluation.
+
+8. Explain your Gesture Based Application Launcher project?
+
+      * My project is a Gesture-Based Application Launcher. The main idea is to reduce dependency on mouse and keyboard for quick actions. So, I built a system where users can launch              applications using hand gestures in real time.
+      * First, I used OpenCV and MediaPipe to access the webcam and extract hand landmark coordinates. I stored these landmark values into a CSV dataset using Pandas.
+      * Then I trained a gesture classification model using TensorFlow/Keras. During training, I monitored accuracy and loss graphs to evaluate performance, and finally saved the trained          model in .h5 format.
+      * After that, I integrated the model into a real-time system. Using Tkinter for the interface and Python subprocess for automation, each gesture was mapped to a specific application.
+      * The final output is: the webcam detects the hand gesture, predicts it on-screen, and automatically opens the corresponding application within a few seconds.
+
+9. What did you learn?
+      In this project helps me to learn real-time computer vision, dataset preparation , moodel training, and intgrate ML output into automation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
