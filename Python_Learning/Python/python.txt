@@ -617,6 +617,15 @@
 9. What did you learn?
       In this project helps me to learn real-time computer vision, dataset preparation , moodel training, and intgrate ML output into automation.
 
+10. Explaim Customer Churn Prediction Project?
+      * I worked on Customer Churn Prediction project using Telco dataset, The main objective was to predict whether the customers will leave the telecom services or not.
+      * First, I performed data cleaning and handled missing values, expecially in the TotalCharges Column.
+        Then, I did eploratory data analysis and found that customer with month-to-month contracts and low tenure customer were more likely to churn.
+      * I encoded categorical data using OneHotEncoding and scaled numerical features using StandardScalar inside pipeline.
+      * I trained a RandomForest Classifier and evaluated using prission, recall, f1-score, roc-auc.
+        Since the dataset is slightly imbalanced, so i focused more on recall to identify maximum churn customers.
+      * Finally, i deployed the trained model using streamlit, where users can enter customer details and get churn prediction along with probability.
+
 
 
 
